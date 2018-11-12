@@ -50,7 +50,7 @@ func main() {
 	if err != nil {
 		log.Fatal(err)
 	}
-	addressScript, err := btcaddress.NewAddressScriptHash(btcaddress.Hash160(serializedScript), &btcaddress.MainNetParams)
+	addressScript, err := btcaddress.NewAddressScriptHash(btcaddress.Hash160(serializedScript), &btcaddress.MainNetParams) //wrong?
 	if err != nil {
 		log.Fatal(err)
 	}
